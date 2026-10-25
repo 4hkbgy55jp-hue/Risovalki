@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Рисуем вместе — онлайн-уроки рисования для детей</title>
+<style>
+:root{--bg:#fff8f0;--card:#fff;--ink:#2b2433;--mute:#6f6679;--a:#ff6b4a;--b:#7c5cff;--c:#ffc83d;--line:#f0e3d6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c1824;--card:#27222f;--ink:#f6f0ff;--mute:#b3a9c0;--line:#3a3344}}
+:root[data-theme="dark"]{--bg:#1c1824;--card:#27222f;--ink:#f6f0ff;--mute:#b3a9c0;--line:#3a3344}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.w{max-width:960px;margin:0 auto;padding:0 18px}
+header{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
+.logo{font-weight:800;font-size:20px}.logo span{color:var(--a)}
+nav a{color:var(--mute);text-decoration:none;margin-left:16px;font-size:14px}
+.hero{padding:36px 0 28px;text-align:center}
+h1{font-size:clamp(28px,6vw,46px);line-height:1.15;margin:0 0 14px}
+h1 em{font-style:normal;color:var(--a)}
+.lead{color:var(--mute);max-width:560px;margin:0 auto 22px}
+.btn{display:inline-block;background:var(--a);color:#fff;border:0;border-radius:14px;padding:13px 24px;font-size:16px;font-weight:700;cursor:pointer;text-decoration:none}
+.btn.alt{background:var(--b)}
+h2{font-size:26px;margin:44px 0 16px}
+.g{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.c{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
+.c b{display:block;margin-bottom:4px}.c p{margin:0;color:var(--mute);font-size:14px}
+.ic{font-size:28px}
+.tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.tab{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:8px 16px;cursor:pointer;font-size:14px}
+.tab.on{background:var(--b);color:#fff;border-color:var(--b)}
+.mod{margin-bottom:12px}.mod h3{margin:0 0 6px;font-size:16px}
+.les{display:flex;justify-content:space-between;gap:8px;padding:8px 0;border-top:1px solid var(--line);font-size:14px}
+.les i{color:var(--mute);font-style:normal;white-space:nowrap}
+.player{display:grid;gap:18px;grid-template-columns:1fr 1fr;align-items:center}
+@media(max-width:640px){.player{grid-template-columns:1fr}}
+.cv{background:var(--card);border:2px dashed var(--c);border-radius:22px;padding:10px}
+svg{width:100%;height:auto;display:block}
+.st{fill:none;stroke:var(--mute);stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+.now .st,.now.st{stroke:var(--a)}
+.nf{fill:var(--mute)}.now .nf{fill:var(--a)}
+.dots{display:flex;gap:6px;margin:12px 0}.dots span{height:8px;flex:1;border-radius:4px;background:var(--line)}.dots span.on{background:var(--a)}
+.ctl{display:flex;gap:10px}
+.pr{position:relative}.pr .tag{position:absolute;top:-10px;right:14px;background:var(--c);color:#2b2433;font-size:12px;font-weight:700;border-radius:999px;padding:2px 10px}
+.pr .price{font-size:28px;font-weight:800;margin:6px 0}
+.pr ul{padding-left:18px;margin:8px 0 0;color:var(--mute);font-size:14px}
+.au{display:flex;gap:16px;align-items:center}
+.av{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--a),var(--b));flex:none;display:grid;place-items:center;font-size:30px}
+footer{margin:48px 0 28px;color:var(--mute);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<div class="w">
+<header><div class="logo">Рисуем <span>вместе</span></div><nav><a href="#prog">Программа</a><a href="#try">Урок</a><a href="#price">Тарифы</a><a href="#author">Автор</a></nav></header>
+
+<section class="hero">
+<h1>Уроки рисования для детей <em>«повторяй за мной»</em></h1>
+<p class="lead">Короткие пошаговые видеоуроки для дошкольников и учеников начальной школы. Ребёнок смотрит, повторяет — и уже на первом занятии получает готовый рисунок.</p>
+<a class="btn" href="#try">Попробовать урок</a>
+</section>
+
+<div class="g">
+<div class="c"><div class="ic">🖍️</div><b>С нуля</b><p>Подходит детям, которые ещё ни разу не рисовали.</p></div>
+<div class="c"><div class="ic">⏱️</div><b>10–15 минут</b><p>Один урок — один рисунок. Не успевает устать.</p></div>
+<div class="c"><div class="ic">👣</div><b>Шаг за шагом</b><p>Каждый рисунок разбит на простые формы.</p></div>
+<div class="c"><div class="ic">🛒</div><b>Материалы недорогие</b><p>Бумага, карандаш, фломастеры или гуашь.</p></div>
+</div>
+
+<h2 id="prog">Программа</h2>
+<div class="tabs" id="tabs"></div>
+<div id="prog-body"></div>
+
+<h2 id="try">Попробуйте урок: «Весёлый котик»</h2>
+<div class="player">
+<div class="cv"><svg viewBox="0 0 200 200" id="cat" role="img" aria-label="Пошаговый рисунок котика">
+<g data-s="1"><circle class="st" cx="100" cy="112" r="56"/></g>
+<g data-s="2"><path class="st" d="M56 76 L60 28 L96 58 M144 76 L140 28 L104 58"/></g>
+<g data-s="3"><circle class="nf" cx="80" cy="106" r="7"/><circle class="nf" cx="120" cy="106" r="7"/><path class="nf" d="M93 124h14l-7 9z"/></g>
+<g data-s="4"><path class="st" d="M100 133 q-8 12 -18 6 M100 133 q8 12 18 6 M60 124 l-32 -6 M60 134 l-32 6 M140 124 l32 -6 M140 134 l32 6"/></g>
+</svg></div>
+<div>
+<b id="stt"></b>
+<p id="std" style="color:var(--mute)"></p>
+<div class="dots" id="dots"></div>
+<div class="ctl"><button class="btn alt" id="prev">Назад</button><button class="btn" id="next">Дальше</button></div>
+</div>
+</div>
+
+<h2>Как устроена платформа</h2>
+<div class="g">
+<div class="c"><div class="ic">🎬</div><b>Видеоуроки</b><p>Рисуем в реальном времени, можно ставить на паузу.</p></div>
+<div class="c"><div class="ic">📄</div><b>Раскадровка PDF</b><p>Шаги урока на одном листе, чтобы распечатать.</p></div>
+<div class="c"><div class="ic">🏅</div><b>Значки и прогресс</b><p>За каждый рисунок ребёнок получает значок.</p></div>
+<div class="c"><div class="ic">🖼️</div><b>Галерея работ</b><p>Родители загружают фото, ребёнок видит свою «выставку».</p></div>
+</div>
+
+<h2 id="price">Тарифы <small style="font-size:13px;color:var(--mute)">(пример, цены меняются под вас)</small></h2>
+<div class="g">
+<div class="c"><b>Пробный</b><div class="price" style="font-size:28px;font-weight:800">0 ₽</div><ul><li>1 урок «Котик»</li><li>PDF-раскадровка</li></ul><br><a class="btn alt" href="#try">Начать</a></div>
+<div class="c pr"><span class="tag">Популярный</span><b>Мини-набор</b><div class="price">99 ₽</div><ul><li>4 урока на выбор</li><li>PDF-раскадровки</li><li>Значки</li></ul><br><a class="btn" href="https://ig.me/m/by.semeykina" target="_blank" rel="noopener">Купить в Директе</a></div>
+<div class="c"><b>Весь курс</b><div class="price" style="font-size:28px;font-weight:800">199 ₽</div><ul><li>Все 18 уроков</li><li>Доступ навсегда</li><li>Все PDF и значки</li></ul><br><a class="btn alt" href="https://ig.me/m/by.semeykina" target="_blank" rel="noopener">Купить в Директе</a></div>
+</div>
+
+<h2 id="author">Об авторе</h2>
+<div class="c au"><div class="av">🎨</div><div><b>Анастасия Иванчук</b><p>Автор курса. Мама двоих детей, знает, как увлечь ребёнка рисованием и не потерять терпение.</p></div></div>
+
+<footer>Хотите купить «Рисовалки»? Напишите слово «рисовалки» в <a href="https://ig.me/m/by.semeykina" target="_blank" rel="noopener" style="color:var(--a)">Директ</a>.<br>© Рисуем вместе · Анастасия Иванчук</footer>
+</div>
+
+<script>
+var P={"Животные":[["6 уроков",["Котик · 10 мин","Зайчик · 10 мин","Утёнок · 10 мин","Рыбка · 10 мин","Ёжик · 10 мин","Мишка · 10 мин"]]],
+"Природа и предметы":[["6 уроков",["Солнышко · 10 мин","Дерево · 10 мин","Цветок · 10 мин","Грибок · 10 мин","Домик · 10 мин","Машинка · 10 мин"]]],"Сложнее ⭐⭐":[["6 уроков",["Ракета · 15 мин","Лисичка · 15 мин","Бабочка · 15 мин","Замок · 15 мин","Черепашка · 15 мин","Кораблик · 15 мин"]]]};
+var tb=document.getElementById("tabs"),pb=document.getElementById("prog-body");
+function show(k){tb.innerHTML="";Object.keys(P).forEach(function(n){var b=document.createElement("button");b.className="tab"+(n===k?" on":"");b.textContent=n;b.onclick=function(){show(n)};tb.appendChild(b)});
+pb.innerHTML=P[k].map(function(m){return '<div class="c mod"><h3>'+m[0]+'</h3>'+m[1].map(function(l){var p=l.split(" · ");return '<div class="les"><span>'+p[0]+'</span><i>'+p[1]+'</i></div>'}).join("")+'</div>'}).join("")}
+show("Животные");
+var S=[["Шаг 1. Голова","Нарисуй большой круг посередине листа. Это голова котика."],["Шаг 2. Ушки","Сверху добавь два треугольничка-ушка."],["Шаг 3. Глазки и носик","Две точки-глазки и маленький треугольник-носик."],["Шаг 4. Усы и ротик","Дорисуй ротик и по три уса с каждой стороны."]];
+var n=1,dots=document.getElementById("dots");
+for(var i=0;i<S.length;i++)dots.appendChild(document.createElement("span"));
+function r(){document.querySelectorAll("#cat g").forEach(function(g){var s=+g.dataset.s;g.style.display=s<=n?"":"none";g.setAttribute("class",s===n?"now":"")});
+document.getElementById("stt").textContent=S[n-1][0];document.getElementById("std").textContent=S[n-1][1];
+[].forEach.call(dots.children,function(d,i){d.className=i<n?"on":""});
+document.getElementById("prev").disabled=n===1;document.getElementById("next").textContent=n===S.length?"Сначала":"Дальше"}
+document.getElementById("prev").onclick=function(){if(n>1){n--;r()}};
+document.getElementById("next").onclick=function(){n=n===S.length?1:n+1;r()};
+r();
+</script>
+</body>
+</html>
